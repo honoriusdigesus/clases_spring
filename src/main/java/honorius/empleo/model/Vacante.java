@@ -9,6 +9,7 @@ public class Vacante {
     private Date fecha;
     private Double salario;
     private Integer destacado;
+    private String logoEmpresa = "No-Image.png";
 
     public Integer getId() {
         return id;
@@ -56,6 +57,14 @@ public class Vacante {
 
     public void setDestacado(Integer destacado) {
         this.destacado = destacado;
+    }
+
+    public String getLogoEmpresa() {
+        return logoEmpresa;
+    }
+
+    public void setLogoEmpresa(String logoEmpresa) {
+        this.logoEmpresa = logoEmpresa;
     }
 
     @Override

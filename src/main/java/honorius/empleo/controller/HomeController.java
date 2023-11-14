@@ -12,6 +12,11 @@ public class HomeController {
     public String mostrarHome(Model model) {
         model.addAttribute("mensaje", "Hello Word - Spring Boot");
         model.addAttribute("fecha",new Date());
+        String nombre = "Honorius di Gesus";
+        Integer edad = 24;
+        model.addAttribute("nombre", nombre);
+        model.addAttribute("edad", edad);
+
         return "home";
     }
 }

@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/")
+@RequestMapping("/vacantes")
 public class VacantesController {
     @GetMapping("/view/{id}")
     public String verDetalles(@PathVariable("id") int idVacante, Model model) {

@@ -1,7 +1,6 @@
 package honorius.empleo.controller;
 
 import honorius.empleo.model.Vacante;
-import org.springframework.boot.Banner;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

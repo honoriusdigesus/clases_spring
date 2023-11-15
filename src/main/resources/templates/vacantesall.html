@@ -14,7 +14,7 @@
     <thead>
     <img th:src="@{/img/logo.png}" alt="Logo de la página" width="136" height="136">
     <tr>
-        <th colspan="6"><h1>Vacantes disponibles</h1></th>
+        <th colspan="6"><h1 class="container text-center">Vacantes disponibles</h1></th>
     </tr>
     </thead>
     <tbody>
@@ -32,7 +32,7 @@
         <td>
             <img th:src="@{/img/{imgen}(imgen=${item.logoEmpresa}) }" alt="Logo de la empresa que oferta" width="80" height="80">
         </td>
-        <td th:text="${item.id}"></td>
+        <td th:text="${item.id}" ></td>
         <td th:text="${item.nombre}"></td>
         <td th:text="${item.fecha}"></td>
         <td th:text="${item.salario}"></td>

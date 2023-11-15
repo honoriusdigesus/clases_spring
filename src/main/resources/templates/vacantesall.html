@@ -27,6 +27,7 @@
         <th>Descripción</th>
         <th>Destacada</th>
         <th>Detalle</th>
+        <th>Borrar</th>
     </tr>
 
     <tr th:each="item : ${vacantesAll}">
@@ -45,7 +46,10 @@
             <span th:unless="${item.destacado ==1}" class="badge text-bg-danger">No</span>
         </td>
         <td>
-            <a th:href="@{/vacantes/view/{id} (id=${item.id})}" class="btn btn-primary">Ver detalles</a>
+            <a th:href="@{/vacantes/view/{id} (id=${item.id})}" class="btn btn-success">Detalles</a>
+        </td>
+        <td>
+            <a th:href="@{/vacantes/delete(id=${item.id})}" class="btn btn-danger">Borrar</a>
         </td>
     </tr>
     </tbody>
